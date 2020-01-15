@@ -2,70 +2,71 @@
 <html>
     <head>
     <title>My WebPage!</title>
+    <link rel="stylesheet" href="style/style.css">
     <style>
-     body{
-         background:rgb(58,58,58);
-         color:white;
-         font-family: Helvetica,Arial, sans-serif;
-         font-size:20px; 
-         margin:0;
-         padding:0;  
-     } 
+    ul{
+        list-style:none;
+        padding:0;
 
-     header{
-         background:black;
-         padding:20px;
-     }
-     ul{
-         margin:0;
-         padding:0;
-         list-style-type:none;
-     }
-     li{
-         display:inline-block;
-         margin:0px 20px 0px 0px;
+    }
+    li{
+        display:inline-block;
+        font-size:100;
+        
+        background:grey;
+        margin-left:20px;
+        border-radius:3px;
+    }
+    li:first-child{
+        margin-left:0;
+    }
+    section.feature-box{
+        display:flex; 
+    }
+    .feature-box div{
+        margin:1px;
+        padding:2px;
+        width:100%;
 
-     }
-     section{
-         background:white;
-         color:grey;
-         padding:20px;
-         display:flex;
-         flex-direction:row;
+    }
+    section.feature-box.sales div {
 
-     }
-     div{
-         background:rgb(214, 216, 82);
-         width:100px;
-         margin:auto;
-         
-     }
-     footer{
-         background:black;
-         color:white;
-         padding:20px;
-     }
+        background:rgb(155, 149, 149);
        
+    }
+    section.feature-box.closeouts div{
+        background:rgb(109, 69, 69);
+    }
+    footer{
+        background:rgb(188, 240, 191);
+    }
+  
+    
     </style>
-
-
     </head>
     <body>
        <header>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="locations.html">Locations</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li class="mobile"><a href="contacts.html">Contacts</a></li>  
+            <li class="mobile"><a href="directions.html">Directions</a></li>    
+            <li class="logo"><a href="index.html">Rajat Kaushik</a></li>
+            <li class="desktop"><a href="contacts.html">Contacts</a></li>  
+            <li class="desktop"><a href="directions.html">Directions</a></li>      
         </ul>   
-        <h1>Home</h1>
+        <h1></h1>
        </header> 
-       <section>
-           <div>a</div>
-           <div>b</div>
-           <div>c</div>
+       <section class="feature-box sales">
+           <div>Section a</div>
+           <div>Section b</div>
+           <div>Section c</div>
 
        </section>
-       <section>lower-section</section> 
-       <footer>footer</footer> 
+       <section class="feature-box closeouts">
+           <div>Section d</div>
+           <div>Section e</div>
+        </section> 
+       <footer>footer is here</footer> 
     </body>
 </html>
