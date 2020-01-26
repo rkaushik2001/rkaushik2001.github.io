@@ -33,8 +33,12 @@ a {
   outline: none;
   color: #444; }
 
+.fab:hover{
+  opacity:0.8;
+}
 a:hover {
-  color: #444; }
+  color: #444;
+  box-shadow:grey 0 0 20px; }
 
 ul {
   margin-bottom: 0;
