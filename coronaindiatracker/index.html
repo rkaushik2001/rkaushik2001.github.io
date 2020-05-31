@@ -11,16 +11,51 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
 
-        
+       <style>
+           #topbanner > img{
+                max-width:100%;
+                max-height:100%;
+                height:200px;
+                width:100%;
+                border-radius:5px;
+                
+            
+           }
+           .toptext{
+               position:absolute;
+               top:100px;
+               right:300px;
+               transform: translate(-50%, -50%);
+               color:rgb(247, 239, 239);
+               background-color: rgba(51, 49, 47, 0.7);
+               border-radius: 5px;
+               
+               
+           }
+           #datatable{
+
+            
+            
+           }
+           #t1{
+               
+                /* Fallback color */
+               
+           }
+
+       </style> 
     </head>
 
     <body>
-        <div class="container-fluid p-5 bg-light text-center my-3">
-            <h1>Covid-19 India Tracker</h1>
-            <h6>By: <i>Rajat Kaushik</i></h6>
+        <div class="container-fluid text-center" id="topbanner">
+            <img src="3.jpg">
+            <div class="toptext">
+                <h1>Covid-19 India Tracker</h1>
+                <h6>By: <i>Rajat Kaushik</i></h6>
+            </div>    
         </div>
 
-        <div class="container-fluid my-5">
+        <div class="container-fluid p-5 bg-light">
             <div class="row text-center">
                 <div class="col-3 col-sm-3 col-md-3 col-xl-3 text-warning">
                     <h5>Confirmed</h5>
@@ -43,8 +78,8 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <table class="table text-center table-hover">
+        <div class="container" id="datatable">
+            <table class="table text-center table-hover table-striped" id="t1">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">State</th>
